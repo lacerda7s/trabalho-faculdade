@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simulador de Canhão</title>
+  <meta name="description" content="Jogo educativo: Engenharia de Software e Leis de Newton com um canhão." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.24.7/babel.min.js"></script>
+  <script src="loader.js" data-entry="src/main"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <div id="boot-loading" class="boot">
+    <div class="boot-spinner"></div>
+    <p>Carregando o laboratório…</p>
+  </div>
+  <div id="boot-error" class="boot boot-error" hidden>
+    <h2>Não foi possível iniciar o simulador</h2>
+    <pre></pre>
+  </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Testes do Simulador</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.24.7/babel.min.js"></script>
+  <script src="loader.js" data-entry="tests/run"></script>
+</head>
+<body class="test-page">
+  <main id="test-root" class="test-root">
+    <h1>Testes automatizados</h1>
+    <p class="muted">Executando testes de física, colisões, pontuação e máquina de estados…</p>
+  </main>
+  <div id="boot-loading" class="boot"><div class="boot-spinner"></div><p>Carregando testes…</p></div>
+  <div id="boot-error" class="boot boot-error" hidden>
+    <h2>Falha ao carregar os testes</h2>
+    <pre></pre>
+  </div>
+</body>
+</html>
